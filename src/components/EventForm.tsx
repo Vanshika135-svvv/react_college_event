@@ -32,10 +32,10 @@ const EventForm = () => {
             <Sparkles className="w-4 h-4" />
             <span className="text-sm font-semibold">Create Your Event</span>
           </div>
-          <h2 className="text-5xl font-bold text-gray-900 mb-4 animate-stagger-item" style={{ animationDelay: '0.1s' }}>
+          <h2 className="text-5xl font-bold text-gray-900 mb-4 animate-stagger-item animation-delay-100">
             Bring Your Event to Life
           </h2>
-          <p className="text-xl text-gray-600 animate-stagger-item" style={{ animationDelay: '0.2s' }}>
+          <p className="text-xl text-gray-600 animate-stagger-item animateStaggerItemWithDelay">
             Share your event with the campus community in just a few clicks
           </p>
         </div>
