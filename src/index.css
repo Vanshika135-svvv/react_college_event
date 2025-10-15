@@ -116,15 +116,6 @@ All colors MUST be HSL.
   z-index: -9;
 }
 
-@keyframes fadeInSlideUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.animated-card {
-  animation: fadeInSlideUp 0.5s ease-out forwards;
-}
-
 @keyframes sectionEnter {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -225,3 +216,23 @@ All colors MUST be HSL.
   transform: translateY(-5px);
   box-shadow: 0 20px 40px rgba(109, 40, 217, 0.15);
 }
+
+/* 🌟 CORRECTED ANIMATION BLOCK 🌟 */
+/* Define the actual animation that will be staggered */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-card {
+  /* Use the CSS variable from the component for the delay */
+  animation: fadeIn 0.5s ease-out var(--card-animation-delay, 0s) forwards;
+  opacity: 0; /* Start invisible */
+}
+/* 🌟 END OF CORRECTED BLOCK 🌟 */
