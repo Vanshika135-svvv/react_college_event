@@ -19,8 +19,7 @@ const EventCard = ({ event, index, onClick }: EventCardProps) => {
 
   return (
     <div
-      className="animated-card bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-500 transform hover:scale-[1.02] overflow-hidden cursor-pointer"
-      style={{ animationDelay: `${index * 0.1}s` }}
+      className={`animated-card bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-500 transform hover:scale-[1.02] overflow-hidden cursor-pointer delay-${index}`}
       onClick={onClick}
     >
       <img
